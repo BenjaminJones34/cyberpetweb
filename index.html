@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cyberpet</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div id="top">
+        <h1 id="heading">Choose your animal and give it a name</h1>
+    </div>
+    <div id="choose">
+        <form id="form">
+            <label for="type">Choose animal:</label>
+            <div class="formsection">
+                <input type="radio" id="dog" name="type" value="Dog">
+                <label for="Dog">Dog</label>
+            </div>
+            <div class="formsection">
+                <input type="radio" id="cat" name="type" value="Cat">
+                <label for="Cat">Cat</label>
+            </div>
+            <div class="formsection">
+                <input type="radio" id="rabbit" name="type" value="Rabbit">
+                <label for="Rabbit">Rabbit</label>
+            </div>
+            <label for="name">Give it a name:</label>
+            <input type="text" id="name" name="name">
+        </form>
+        <button id="submit">Submit</button>
+    </div>
+    <div id="main">
+        <div id="imagesection">
+            <img src="" id="image">
+        </div>
+        <div id="stats">
+            <p id="healthtext">health: 100</p>
+            <p id="moodtext">mood: happy</p>
+            <p id="hungertext">hunger: 100</p>
+            <p id="thirsttext">thirst: 100</p>
+            <p id="tirednesstext">tiredness: 100</p>
+        </div>
+        <div id="button">
+            <button id="play" class="button">Play</button>
+            <button id="feed" class="button">Feed</button>
+            <button id="drink" class="button">Drink</button>
+            <button id="sleep" class="button">Sleep</button>
+        </div>
+    </div>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
